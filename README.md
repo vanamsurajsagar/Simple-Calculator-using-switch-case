@@ -6,19 +6,19 @@ A collection of lightweight, foundational C utilities demonstrating key programm
 
 ### 1. Simple Calculator
 A command-line tool executing basic arithmetic operations.
-- **Source File:** `calculator.c`
+- **Source File:** `code.c`
 - **Core Concept:** `switch-case` structural control flow.
 - **Features:** Supports `+`, `-`, `*`, `/`. Includes edge-case filtering to prevent system crashes from **division by zero**.
 
 ### 2. Student Average Calculator
 A modular software layout tracking academic scores across dynamically sized subject fields.
-- **Source File:** `student_average.c`
+- **Source File:** `code2.c`
 - **Core Concept:** Multi-function parameters and standard arrays.
 - **Features:** Segregates input routines (`getMarks`) from analytical logic (`calculateAverage`) for clean architecture.
 
 ### 3. Pointer-Based Word Counter
 An efficient text scanner processing complete sentences into word metrics.
-- **Source File:** `word_counter.c`
+- **Source File:** `code3.c`
 - **Core Concept:** Direct memory traversal using pointer arithmetic (`str++`).
 - **Features:** State tracking flags isolate individual words and cleanly filter out multiple consecutive spaces, tabs, or newlines.
 
