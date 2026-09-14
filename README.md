@@ -1,124 +1,64 @@
-# C Programming Foundations
+# C Programming Core Utilities
 
-A collection of lightweight, beginner-friendly C programs showcasing core logical structures, modular functions, and arrays.
+A collection of lightweight, foundational C utilities demonstrating key programming concepts: conditional switch logic, modular array functions, and low-level pointer arithmetic.
 
-## 📁 Projects Included
+## 📁 Repository Projects
 
 ### 1. Simple Calculator
-A command-line calculator that performs basic arithmetic operations using a `switch-case` structure.
-- **Location:** `calculator.c`
-- **Features:** Supports `+`, `-`, `*`, `/`. Includes edge-case verification to prevent **division by zero**.
+A command-line tool executing basic arithmetic operations.
+- **Source File:** `calculator.c`
+- **Core Concept:** `switch-case` structural control flow.
+- **Features:** Supports `+`, `-`, `*`, `/`. Includes edge-case filtering to prevent system crashes from **division by zero**.
 
 ### 2. Student Average Calculator
-A modular application that uses separate functions to gather user input and calculate a student's average marks.
-- **Location:** `student_average.c`
-- **Features:** Dynamically scales to any number of subjects using loops, basic arrays, and distinct helper functions.
+A modular software layout tracking academic scores across dynamically sized subject fields.
+- **Source File:** `student_average.c`
+- **Core Concept:** Multi-function parameters and standard arrays.
+- **Features:** Segregates input routines (`getMarks`) from analytical logic (`calculateAverage`) for clean architecture.
 
----
-
-## 🛠️ How It Works
-
-### Calculator (`switch-case`):
-The program parses a single character operator along with two numeric operands, using the execution jumps of a `switch` block to prevent long, messy chains of conditional logic.
-
-### Student Average Calculator (`functions`):
-This script breaks down execution into distinct scopes to keep clean separations of concern:
-- `getMarks()`: Handles the array data collection.
-- `calculateAverage()`: Accumulates data parameters and returns the mean calculation.
+### 3. Pointer-Based Word Counter
+An efficient text scanner processing complete sentences into word metrics.
+- **Source File:** `word_counter.c`
+- **Core Concept:** Direct memory traversal using pointer arithmetic (`str++`).
+- **Features:** State tracking flags isolate individual words and cleanly filter out multiple consecutive spaces, tabs, or newlines.
 
 ---
 
 ## 📋 Prerequisites
-Ensure you have a standard C compiler configured on your workspace environment:
+Ensure you have a standard C compiler configured on your machine:
 - **GCC** (Linux/Mac)
 - **MinGW / MSVC** (Windows)
-- Or any C-compatible IDE (VS Code, Code::Blocks, Dev-C++)
+- Alternately, any standard IDE (VS Code, Code::Blocks, Dev-C++)
 
 ---
 
-## 💻 How to Run
+## 💻 How to Compile and Run
 
-1. **Clone the repository:**
+1. **Clone the project repository:**
    ```bash
    git clone https://github.com
    cd YOUR_REPO_NAME
    ```
 
-2. **To compile and run the Calculator:**
+2. **Run the Simple Calculator:**
    ```bash
    gcc calculator.c -o calculator
    ./calculator
    ```
 
-3. **To compile and run the Student Average Calculator:**
+3. **Run the Student Average Calculator:**
    ```bash
    gcc student_average.c -o student_average
    ./student_average
    ```
 
----
-
-## 📄 License
-This repository is open-source and free to use under the [MIT License](LICENSE).
-# C Programming Foundations
-
-A collection of lightweight, beginner-friendly C programs showcasing core logical structures, modular functions, and arrays.
-
-## 📁 Projects Included
-
-### 1. Simple Calculator
-A command-line calculator that performs basic arithmetic operations using a `switch-case` structure.
-- **Location:** `calculator.c`
-- **Features:** Supports `+`, `-`, `*`, `/`. Includes edge-case verification to prevent **division by zero**.
-
-### 2. Student Average Calculator
-A modular application that uses separate functions to gather user input and calculate a student's average marks.
-- **Location:** `student_average.c`
-- **Features:** Dynamically scales to any number of subjects using loops, basic arrays, and distinct helper functions.
-
----
-
-## 🛠️ How It Works
-
-### Calculator (`switch-case`):
-The program parses a single character operator along with two numeric operands, using the execution jumps of a `switch` block to prevent long, messy chains of conditional logic.
-
-### Student Average Calculator (`functions`):
-This script breaks down execution into distinct scopes to keep clean separations of concern:
-- `getMarks()`: Handles the array data collection.
-- `calculateAverage()`: Accumulates data parameters and returns the mean calculation.
-
----
-
-## 📋 Prerequisites
-Ensure you have a standard C compiler configured on your workspace environment:
-- **GCC** (Linux/Mac)
-- **MinGW / MSVC** (Windows)
-- Or any C-compatible IDE (VS Code, Code::Blocks, Dev-C++)
-
----
-
-## 💻 How to Run
-
-1. **Clone the repository:**
+4. **Run the Word Counter:**
    ```bash
-   git clone https://github.com
-   cd YOUR_REPO_NAME
-   ```
-
-2. **To compile and run the Calculator:**
-   ```bash
-   gcc calculator.c -o calculator
-   ./calculator
-   ```
-
-3. **To compile and run the Student Average Calculator:**
-   ```bash
-   gcc student_average.c -o student_average
-   ./student_average
+   gcc word_counter.c -o word_counter
+   ./word_counter
    ```
 
 ---
 
 ## 📄 License
-This repository is open-source and free to use under the [MIT License](LICENSE).
+This repository is completely open-source and free to distribute under the terms of the [MIT License](LICENSE).
